@@ -1,0 +1,36 @@
+
+/* resetando todos os elementos da página para que não exista bordas indesejadas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+  
+body {
+    font-family: 'Alata', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+header {
+    background: url(images/fundo_top.jpg) no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 100vh;
+    padding: 2rem 1.5rem;
+}
+
+.navigator_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+.navigator_top .logo{
+    z-index: 1;
+    height: 2rem;
+    width: 12rem;
+}
