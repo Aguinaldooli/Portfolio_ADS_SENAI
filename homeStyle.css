@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-Gray: hsl(0, 0%, 55%);
+  --very-Dark-Gray: hsl(0, 0%, 41%);
+}
 
 /* resetando todos os elementos da página para que não exista bordas indesejadas */
 * {
@@ -17,12 +24,39 @@ body {
 }
 
 header {
-    background: url(images/fundo_top.jpg) no-repeat;
+    background: url(images/fundo_ads.jpg) repeat;
     background-size: contain;
     background-position: top;
     height: 100vh;
     padding: 2rem 1.5rem;
+    filter: brightness(0.75);
+    opacity: 0.9;
 }
+
+.titleP h1 {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 4.5rem;
+    border: 2px solid var(--white);
+    margin-top: 8.2rem;
+    padding: 2rem 2.5rem;
+    text-align: left;
+    width: 60%;
+  }
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    list-style: none;
+    cursor: pointer;
+  }
 
 .navigator_top {
     display: flex;
@@ -34,3 +68,12 @@ header {
     height: 2rem;
     width: 12rem;
 }
+
+.navoption ul {
+    display: flex;
+    list-style: none;
+  }
+  
+.navoption li {
+    margin-right: 1rem;
+  }
