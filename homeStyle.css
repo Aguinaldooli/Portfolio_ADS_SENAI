@@ -55,6 +55,12 @@ ul {
     padding-inline-start: 40px;
     
 }
+.nav{
+  background: #34495e;
+  border-radius: 80px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0,.1);
+}
+
 li {
     list-style: none;
     cursor: pointer;
