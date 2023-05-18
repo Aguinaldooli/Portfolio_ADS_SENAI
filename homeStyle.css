@@ -1,3 +1,4 @@
+/* Importando Fontes e definindo algumas cores */
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 :root {
   --white: hsl(0, 0%, 100%);
@@ -29,7 +30,7 @@ header {
     background-position: top;
     height: 100vh;
     padding: 2rem 1.5rem;
-    filter: brightness(0.75);
+    filter: brightness(0.80);
     opacity: 0.9;
 }
 
@@ -52,6 +53,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    
 }
 li {
     list-style: none;
@@ -68,7 +70,12 @@ li {
     height: 2rem;
     width: 12rem;
 }
-
+.navigator_top ul li {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.4s ease;
+}
 .navoption ul {
     display: flex;
     list-style: none;
