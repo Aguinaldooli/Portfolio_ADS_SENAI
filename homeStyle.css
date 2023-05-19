@@ -90,3 +90,61 @@ li {
 .navoption li {
     margin-right: 1rem;
   }
+
+/*main */
+
+.container,
+footer {
+  max-width: 390px;
+  margin: 0 auto;
+}
+.container_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.image__g {
+  padding: 0;
+  margin-bottom: 15rem;
+}
+
+.image_g h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.linguagem {
+  background: url(./images/linguagem.png) no-repeat;
+}
+.automacao {
+  background: url(./images/automacao.jpg) no-repeat;
+}
+.redes {
+  background: url(./images/redes.jpg) no-repeat;
+}
+.bancos {
+  background: url(./images/banco.jpg) no-repeat;
+}
+.ciencia {
+  background: url(./images/ciencias.jpg) no-repeat;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-size: contain;
+}
+
+.image p {
+  width: 90%;
+  padding: 22.7rem 4rem 2rem 2rem;
+  background-image: linear-gradient(to right, rgba(1, 0, 0), transparent);
+}
