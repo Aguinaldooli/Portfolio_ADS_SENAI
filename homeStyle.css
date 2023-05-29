@@ -117,7 +117,7 @@ li {
 }
 
 /* main*/
-.main {
+main {
   padding: 40px;
   display: grid;
   gap: 20px;
@@ -140,7 +140,7 @@ li {
 }
 
 .subject .carousel {
- position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ li {
 }
 
 .subject .carousel img {
- width: 400px;
+  width: 400px;
   height: auto;
   margin: 0 20px;
   border-radius: 10px;
@@ -203,8 +203,52 @@ li {
   cursor: pointer;
 }
 
+.subject#automacao {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  text-align: left;
+}
 
+.subject#automacao .carousel-container {
+  position: relative;
+  width: 400px; /* Defina a largura desejada para o carrossel */
+  height: auto; /* A altura se ajustará com base no conteúdo */
+  margin-right: 20px; /* Espaçamento entre o carrossel e o texto */
+  overflow: hidden;
+}
 
+.subject#automacao .carousel {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
 
+.subject#automacao .carousel img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+}
 
+.subject#automacao .carousel img.active {
+  position: static;
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.subject#automacao p {
+  max-width: 600px;
+  margin-top: 20px;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+}

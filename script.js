@@ -28,3 +28,44 @@ images.forEach(image => {
         });
     });
 });
+
+window.addEventListener('load', function() {
+  var carouselImages = document.querySelectorAll('.subject#automacao .carousel img');
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  var inView = [];
+
+  function isElementVisible(element) {
+    var rect = element.getBoundingClientRect();
+    return rect.top < windowHeight && rect.bottom >= 0;
+  }
+
+  function updateCarouselImages() {
+    inView = [];
+    carouselImages.forEach(function(image) {
+      if (isElementVisible(image)) {
+        inView.push(image);
+      }
+    });
+
+    carouselImages.forEach(function(image) {
+      image.classList.remove('active');
+    });
+
+    if (inView.length > 0) {
+      inView[inView.length - 1].classList.add('active');
+    }
+  }
+
+  function handleScroll() {
+    var automacaoSection = document.querySelector('#automacao');
+    if (isElementVisible(automacaoSection)) {
+      document.body.classList.add('no-scroll');
+      updateCarouselImages();
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll);
+});
