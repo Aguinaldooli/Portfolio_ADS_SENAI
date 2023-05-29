@@ -1,14 +1,30 @@
-const open_btn = document.querySelector('.open');
-const close_btn = document.querySelector('.close');
+const images = document.querySelectorAll('.carousel img');
 
-open_btn.addEventListener('click', () => {
-  document.querySelector('.open').style.display = 'none';
-  document.querySelector('.close').style.display = 'inline';
-  document.querySelector('.mobile__nav').style.display = 'block';
-});
+// Adiciona o evento de clique em cada imagem
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // Cria um elemento de imagem para exibir a imagem ampliada
+        const enlargedImage = document.createElement('img');
+        enlargedImage.src = image.src;
+        enlargedImage.classList.add('enlarged-image');
 
-close_btn.addEventListener('click', () => {
-  document.querySelector('.open').style.display = 'inline';
-  document.querySelector('.close').style.display = 'none';
-  document.querySelector('.mobile__nav').style.display = 'none';
+        // Cria o botão de fechar
+        const closeButton = document.createElement('button');
+        closeButton.innerHTML = 'Fechar';
+        closeButton.classList.add('close-button');
+
+        // Cria uma div para envolver a imagem ampliada e o botão de fechar
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+        overlay.appendChild(closeButton);
+        overlay.appendChild(enlargedImage);
+
+        // Adiciona a div de sobreposição ao corpo do documento
+        document.body.appendChild(overlay);
+
+        // Remove a div de sobreposição ao clicar no botão de fechar
+        closeButton.addEventListener('click', () => {
+            document.body.removeChild(overlay);
+        });
+    });
 });
