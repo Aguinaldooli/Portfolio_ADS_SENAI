@@ -8,6 +8,7 @@
  
     <title>Senai ADS</title>
 </head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <body>
     <header>
         <div class="navigator_top">
@@ -30,59 +31,130 @@
         </div>
     </header>
     <main>
-       <section id="linguagem" class="subject">
+        <section id="linguagem" class="subject">
             <h2>Linguagem de Programação</h2>
             <div class="carousel">
-                <img src="images/projetos/curriculo.png" alt="Imagem 1">
-                <img src="images/projetos/html.png" alt="Imagem 2">
-                <img src="images/projetos/css.png" alt="Imagem 3">
+                <img class="expandable-image" src="images/projetos/curriculo.png" alt="Imagem 1">
+                <img class="expandable-image" src="images/projetos/html.png" alt="Imagem 2">
+                <img class="expandable-image" src="images/projetos/css.png" alt="Imagem 3">
             </div>
-            <p>A primeira disciplina do semestre foi a de Linguagem de Programação aonde aprendemos atráves das ferramentas Html, Css e javascript conceitos como linguagem de marcação Html, como por exemplo: tags mais usadas atualmente, estruturas adequadas, HTML semântico, tabelas, entre outros. Também foi abordado para estilização o css com conceitos de organização de elementos atráves do flexbox! após isso iniciou-se alguns projetos como o currículo pessoal para unir as duas tecnologias.sucetivamente foi a vez do JavaScript o que possibilou </p>
+
+            <p>A primeira disciplina do semestre foi a de Linguagem de Programação onde aprendemos através das ferramentas HTML, CSS e JavaScript conceitos como linguagem de marcação HTML, como por exemplo: tags mais usadas atualmente, estruturas adequadas, HTML semântico, tabelas, entre outros. Também foi abordado para estilização o CSS com conceitos de organização de elementos através do flexbox! Após isso, iniciou-se alguns projetos como o currículo pessoal para unir as duas tecnologias. Subsequentemente foi a vez do JavaScript, o que possibilitou...
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/2023-06-09 17-34-34.mp4" type="video/mp4">
+                    Seu navegador não suporta reprodução de vídeo.
+                </video>
+            </div>
         </section>
+
+        <div id="imageModal" class="modal">
+            <span class="close-button">&times;</span>
+            <img class="modal-content" id="expandedImage">
+            <div id="caption"></div>
+        </div>
+
         <section id="automacao" class="subject">
-            <div class="carousel-container">
-                <div class="carousel">
-                    <img src="images/banco.jpg" alt="Imagem 1">
-                    <img src="images/redes.jpg" alt="Imagem 2">
-                    <img src="images/fundo_top.jpg" alt="Imagem 3">
-             </div>
+            <h2>Automação Industrial</h2>
+            <div class="carousel">
+                <img class="expandable-image" src="images/projetos/curriculo.png" alt="Imagem 1">
+                <img class="expandable-image" src="images/projetos/html.png" alt="Imagem 2">
+                <img class="expandable-image" src="images/projetos/css.png" alt="Imagem 3">
             </div>
-            <div class="text-container">
-                <h2>Automação Industrial</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cum odit voluptate harum voluptas iste iure officiis dolorem deleniti. Omnis facere exercitationem sunt veniam blanditiis repellendus consectetur quae hic quos?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam alias odit fugit quisquam ad, quo maiores? Numquam et, quae vero veniam recusandae accusamus aliquid quaerat eos, hic pariatur iusto Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quidem quae excepturi aliquam, beatae, quibusdam enim esse inventore unde odio corrupti dolore ea a, laborum distinctio eos voluptas? Natus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nobis eos sapiente aliquam. Necessitatibus nobis, numquam porro iure placeat odio illum nihil obcaecati? Reiciendis necessitatibus, veritatis eligendi illo obcaecati velit.</p>
-                </div>
+
+            <p>Texto sobre automacao aqui Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aspernatur suscipit est non enim possimus nulla beatae sit earum! Maxime dolorum facere dolores inventore voluptatum repudiandae molestiae ullam accusamus assumenda.
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="(video de automação aqui)" type="video/mp4">
+                    Seu navegador não suporta reprodução de vídeo.
+                </video>
+            </div>
         </section>
+
         <section id="redes" class="subject">
             <h2>Redes de Computadores</h2>
             <div class="carousel">
-                <img src="images/projetos/curriculo.png" alt="Imagem 1">
-                <img src="images/projetos/html.png" alt="Imagem 2">
-                <img src="images/projetos/css.png" alt="Imagem 3">
+                <img class="expandable-image" src="images/projetos/curriculo.png" alt="Imagem 1">
+                <img class="expandable-image" src="images/projetos/html.png" alt="Imagem 2">
+                <img class="expandable-image" src="images/projetos/css.png" alt="Imagem 3">
             </div>
-            <p>Vou mudar aqui 2</p>
+
+            <p>Texto de redes aqui! Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quam quibusdam adipisci repellendus ratione facere natus voluptas provident minus deleniti, quos veniam. Voluptatem fugit, repellat vero doloremque sequi tempore aperiam?
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/2023-06-09 17-34-34.mp4" type="video/mp4">
+                    Seu navegador não suporta reprodução de vídeo.
+                </video>
+            </div>
         </section>
-        <section id="Banco" class="subject">
+
+        <section id="banco" class="subject">
             <h2>Banco de Dados</h2>
             <div class="carousel">
-                <img src="images/projetos/curriculo.png" alt="Imagem 1">
-                <img src="images/projetos/html.png" alt="Imagem 2">
-                <img src="images/projetos/css.png" alt="Imagem 3">
+                <img class="expandable-image" src="images/projetos/curriculo.png" alt="Imagem 1">
+                <img class="expandable-image" src="images/projetos/html.png" alt="Imagem 2">
+                <img class="expandable-image" src="images/projetos/css.png" alt="Imagem 3">
             </div>
-            <p>Mudar 3</p>
+
+            <p>Banco de dados vai aqui!!!! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, suscipit! Fugit, eos rerum, repellendus ullam totam quibusdam, possimus excepturi quis mollitia libero incidunt voluptate maiores iure quaerat corporis! Consectetur, porro?
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/2023-06-09 17-34-34.mp4" type="video/mp4">
+                    Seu navegador não suporta reprodução de vídeo.
+                </video>
+            </div>
         </section>
+
         <section id="ciencia" class="subject">
-            <h2>Ciência de Dados</h2>
+            <h2>Ciências de Dados</h2>
             <div class="carousel">
-                <img src="images/projetos/curriculo.png" alt="Imagem 1">
-                <img src="images/projetos/html.png" alt="Imagem 2">
-                <img src="images/projetos/css.png" alt="Imagem 3">
+                <img class="expandable-image" src="images/projetos/curriculo.png" alt="Imagem 1">
+                <img class="expandable-image" src="images/projetos/html.png" alt="Imagem 2">
+                <img class="expandable-image" src="images/projetos/css.png" alt="Imagem 3">
             </div>
-            <p>Texto aqui também</p>
+
+            <p>texto louco aqui Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium deserunt nihil molestias, ea modi quis esse quo aut ipsam sit. Saepe corporis natus ullam officia voluptas. Aspernatur, iure deserunt.
+            </p>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/2023-06-09 17-34-34.mp4" type="video/mp4">
+                    Seu navegador não suporta reprodução de vídeo.
+                </video>
+            </div>
         </section>
     </main>
     <footer>
-       <p>Todos os direitos Reservados - 2023</p> 
-    </footer>   
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Telefone: (15) 998546647</p>
+                <p>Email: aguinaldomendes.jr@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul class="social-media">
+                    <li><a href="https://github.com/Aguinaldooli"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/aguinaldo-mendesjr/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/guiga_oli/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul class="useful-links">
+                    <li><a href="https://sorocaba.sp.senai.br/">Senai</a></li>
+                    <li><a href="https://www.2rpnet.com.br/pt">2RP NET</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ADS Senai. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
