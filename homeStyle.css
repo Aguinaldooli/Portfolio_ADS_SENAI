@@ -1,5 +1,5 @@
 /* Importando Fontes e definindo algumas cores */
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -9,72 +9,71 @@
 
 /* resetando todos os elementos da página para que não exista bordas indesejadas */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 15px;
+  font-size: 15px;
 }
-  
+
 body {
-    font-family: 'Alata', sans-serif;
-    overflow-x: hidden;
-    min-height: 100vh;
+  font-family: "Alata", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 header {
-    background: url(images/fundo_ads.jpg) repeat;
-    background-size: contain;
-    background-position: top;
-    height: 100vh;
-    padding: 2rem 1.5rem;
-    filter: brightness(0.80);
-    opacity: 0.9;
+  background: url(images/fundo_ads.jpg) repeat;
+  background-size: contain;
+  background-position: top;
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  filter: brightness(0.8);
+  opacity: 0.9;
 }
 
 .titleP h1 {
-    color: var(--white);
-    font-weight: 300;
-    font-size: 4.5rem;
-    border: 2px solid var(--white);
-    margin-top: 8.2rem;
-    padding: 2rem 2.5rem;
-    text-align: left;
-    width: 60%;
-  }
+  color: var(--white);
+  font-weight: 300;
+  font-size: 4.5rem;
+  border: 2px solid var(--white);
+  margin-top: 8.2rem;
+  padding: 2rem 2.5rem;
+  text-align: left;
+  width: 60%;
+}
 
 ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
-.nav{
+.nav {
   background: #34495e;
   border-radius: 80px;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0,.1);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 li {
-    list-style: none;
-    cursor: pointer;
-  }
+  list-style: none;
+  cursor: pointer;
+}
 
 .navigator_top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}  
-.navigator_top .logo{
-    z-index: 1;
-    height: 2rem;
-    width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigator_top .logo {
+  z-index: 1;
+  height: 2rem;
+  width: 10rem;
 }
 .navigator_top ul li {
   color: var(--white);
@@ -88,14 +87,14 @@ li {
 }
 
 .navoption ul {
-    display: flex;
-    list-style: none;
-  }
-  
+  display: flex;
+  list-style: none;
+}
+
 .navoption li {
   margin-right: 1rem;
   transition: transform 0.3s ease, color 0.3s ease;
-  }
+}
 
 .navoption li:hover {
   transform: scale(1.1);
@@ -104,7 +103,7 @@ li {
 
 .navoption ul li a {
   text-decoration: none;
-   color: #fff;
+  color: #fff;
 }
 
 @keyframes slideIn {
@@ -147,7 +146,7 @@ li {
 
 .subject .carousel img {
   width: 100%;
-  max-width: 400px; /* Defina o tamanho máximo desejado para as imagens */
+  max-width: 400px;
   height: auto;
   margin: 0 10px;
   border-radius: 10px;
