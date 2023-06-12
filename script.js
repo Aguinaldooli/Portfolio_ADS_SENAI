@@ -1,12 +1,12 @@
 // Obtém todas as imagens com a classe 'expandable-image'
 const images = document.querySelectorAll(".expandable-image");
 
-// Obtém o modal, a imagem expandida e a legenda
+// Obtém o modal(janela), a imagem expandida e a legenda
 const modal = document.getElementById("imageModal");
 const expandedImage = document.getElementById("expandedImage");
 const caption = document.getElementById("caption");
 
-// Percorre todas as imagens e adiciona um ouvinte de evento de clique
+// Percorre todas as imagens e adiciona um ""ouvinte" de evento de clique
 images.forEach((image) => {
   image.addEventListener("click", () => {
     // Define a imagem expandida e a legenda
@@ -21,7 +21,7 @@ images.forEach((image) => {
 // Obtém o botão de fechar o modal
 const closeButton = document.querySelector(".close-button");
 
-// Adiciona um ouvinte de evento de clique no botão de fechar
+// Adiciona um "ouvinte" de evento de clique no botão de fechar
 closeButton.addEventListener("click", () => {
   // Fecha o modal
   modal.style.display = "none";
