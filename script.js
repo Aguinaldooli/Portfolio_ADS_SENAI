@@ -26,3 +26,9 @@ closeButton.addEventListener("click", () => {
   // Fecha o modal
   modal.style.display = "none";
 });
+
+//botão para voltar no topo
+var btn = document.querySelector("#back-to-top");
+btn.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+});
