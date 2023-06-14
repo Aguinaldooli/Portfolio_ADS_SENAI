@@ -239,12 +239,12 @@ li {
   padding: 40px; /* espaçamento interno */
   background: linear-gradient(rgba(153, 153, 153, 0.6), rgba(153, 153, 153, 0.8)); /* gradiente com opacidade */
   border-radius: 10px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9); 
   transition: box-shadow 0.3s; /* transição suave para a sombra */
 }
 
 .subject p:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra mais intensa no hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* sombra mais intensa no hover */
 }
   
 
@@ -383,6 +383,7 @@ footer {
 .spinner {
   width: 70.4px;
   height: 70.4px;
+  margin-left: 6%;
   --clr: rgb(247, 197, 159);
   --clr-alpha: rgb(247, 197, 159,.1);
   animation: spinner 1.6s infinite ease;
