@@ -184,7 +184,7 @@ li {
 }
 
 .subject .video-container {
-  max-width: 800px; /*largura máxima para o vídeo */
+  max-width: 800px; /* largura máxima para o vídeo */
   margin: 0 auto;
   margin-top: 20px;
   position: relative;
@@ -237,7 +237,16 @@ li {
   margin-right: auto;
   max-width: 800px; /* largura máxima para o texto */
   padding: 40px; /* espaçamento interno */
+  background: linear-gradient(rgba(153, 153, 153, 0.6), rgba(153, 153, 153, 0.8)); /* gradiente com opacidade */
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  transition: box-shadow 0.3s; /* transição suave para a sombra */
 }
+
+.subject p:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra mais intensa no hover */
+}
+  
 
 .modal {
   display: none;
